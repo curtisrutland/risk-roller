@@ -6,4 +6,5 @@ export const siteConfig = {
   links: {
     github: "https://github.com/curtisrutland/risk-roller",
   },
+  colorChangeInterval: 10000, // 10 seconds
 };
