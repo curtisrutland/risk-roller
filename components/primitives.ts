@@ -51,3 +51,14 @@ export const subtitle = tv({
     fullWidth: true,
   },
 });
+
+
+export function generateUniqueColorPair(): [string, string] {
+  const colors = ["violet", "yellow", "blue", "cyan", "green", "pink"];
+  const color1 = colors[Math.floor(Math.random() * colors.length)];
+  let color2 = colors[Math.floor(Math.random() * colors.length)];
+  while (color1 === color2) {
+    color2 = colors[Math.floor(Math.random() * colors.length)];
+  }
+  return [color1, color2];
+}
